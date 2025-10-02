@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import useInputField from "../../hooks/UseInputField/UseInputField";
 
 const HookForm = () => {
@@ -8,7 +7,7 @@ const HookForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submitted", name, email, password);
+    console.log("submitted:", `Name:${name}`, email, password);
   };
 
   return (
