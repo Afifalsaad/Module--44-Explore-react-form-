@@ -1,12 +1,12 @@
 import React from 'react';
 import Cousin from './Cousin';
 
-const Aunt = () => {
+const Aunt = ({asset}) => {
     return (
         <div>
             <h3>Aunt</h3>
             <section className='flex'>
-                <Cousin name='ratul'></Cousin>
+                <Cousin asset={asset} name='ratul'></Cousin>
                 <Cousin name='rafsu'></Cousin>
             </section>
         </div>
